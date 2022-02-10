@@ -12,7 +12,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/ClearPeaksWeb/od-marketplace-arm-templates/main/cosmosTemplate.json?token=AXB6QKMD7IJUWIHMGX6R3PTB2LLDI",
+                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/cosmosTemplate.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
@@ -40,7 +40,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/ClearPeaksWeb/od-marketplace-arm-templates/main/postgresqltemplate.json?token=AXB6QKJEONAV3VZQUITBWULB2LLHS",
+                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/postgresqltemplate.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
@@ -54,7 +54,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/ClearPeaksWeb/od-marketplace-arm-templates/main/kubernetes.json?token=AXB6QKM4U75PD7IYOFVSIO3B2LLJG",
+                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/kubernetes.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
