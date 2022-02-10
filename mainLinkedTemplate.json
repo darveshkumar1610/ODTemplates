@@ -4,21 +4,19 @@
     "parameters": {},
     "functions": [],
     "variables": {},
-    "resources": [
-        {
+    "resources": [{
             "name": "cosmosDBDeployment",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2021-04-01",
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/cosmosTemplate.json",
+                    "uri": "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/cosmosTemplate.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
             }
         },
-
         {
             "name": "containerRegistryDeployment",
             "type": "Microsoft.Resources/deployments",
@@ -26,13 +24,12 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/containerRegistryTemplate.json",
+                    "uri": "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/containerRegistryTemplate.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
             }
         },
-
         {
             "name": "postgreSqlDBDeployment",
             "type": "Microsoft.Resources/deployments",
@@ -40,7 +37,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/postgresqltemplate.json",
+                    "uri": "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/postgresql.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
@@ -54,7 +51,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/kubernetes.json",
+                    "uri": "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/kubernetes.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
