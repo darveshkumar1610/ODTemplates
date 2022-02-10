@@ -1,0 +1,52 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "registryName": {
+            "type": "string",
+            "defaultValue": "webTeam"
+        },
+        "registryLocation": {
+            "defaultvalue": "westeurope",
+            "type": "string"
+        },
+        "zoneRedundancy": {
+            "defaultvalue": "disabled",
+            "type": "string"
+        },
+        "registrySku": {
+            "defaultvalue": "Standard",
+            "type": "string"
+        },
+        "registryApiVersion": {
+            "defaultvalue": "2020-11-01-preview",
+            "type": "string"
+        },
+        "tags": {
+            "type": "object",
+            "defaultValue": {}
+        },
+        "publicNetworkAccess": {
+            "defaultvalue": "Enabled",
+            "type": "string"
+        }
+    },
+    "resources": [
+        {
+            "name": "[parameters('registryName')]",
+            "type": "Microsoft.ContainerRegistry/registries",
+            "location": "[parameters('registryLocation')]",
+            "apiVersion": "[parameters('registryApiVersion')]",
+            "sku": {
+                "name": "[parameters('registrySku')]"
+            },
+            "dependsOn": [],
+            "tags": "[parameters('tags')]",
+            "properties": {
+                "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
+                "zoneRedundancy": "[parameters('zoneRedundancy')]"
+            }
+        }
+    ],
+    "outputs": {}
+}
