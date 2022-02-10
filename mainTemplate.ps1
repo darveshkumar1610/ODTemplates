@@ -26,7 +26,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri" : "https://raw.githubusercontent.com/ClearPeaksWeb/od-marketplace-arm-templates/main/containerRegistryTemplate.json?token=AXB6QKLPEX2VXYNWZDLMNZDB2LLAQ",
+                    "uri" : "https://raw.githubusercontent.com/darveshkumar1610/ODTemplates/main/containerRegistryTemplate.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {}
